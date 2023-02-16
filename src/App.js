@@ -15,9 +15,12 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
+import axios from 'axios';
 
 // width of drawer
 const drawerWidth = 240;
+
+
 
 
 
@@ -102,6 +105,11 @@ export default function App() {
 
   
 
+  const view = console.log("is it clicked")
+
+
+  
+
   return (
     <Box sx={{ display: "flex" }}>
       <Drawer variant="permanent" open={open}   PaperProps={{sx: {width: 240}}} >
@@ -146,5 +154,6 @@ export default function App() {
         )}
       </IconButton>
     </Box>
+
   );
 }
